@@ -86,10 +86,7 @@ $('.confirm').on ("click", function() {
   {
         $('.alert-danger').css('display','block');
          $('.alert-success').css('display','none');
-         if (data) {
-    e.preventDefault();
-    $('#myModal').modal();
-  }
+         $(".confirm").attr("data-target", " ");
   }
 
 $('#keyframes').text('@-webkit-keyframes progress-bar{from { width: 0%; }to { width:'+valueNow+ '%;}');
