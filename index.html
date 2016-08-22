@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<title>Fund Raiser Campaign for Grabyo</title>
+
+	<!-- Fonts -->
+	
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS Files -->
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+      <style id="keyframes">
+        @-webkit-keyframes progress-bar {
+            from { width: 0%; }
+    		to { width: 43%; }
+        }
+		</style>
+      <div class="container text-center">
+        <h1>Fundraiser Campaign</h1>
+        <div class="row">
+        	<div class="progress-bg">
+    	<div class="progress-bar" id="progress" role="progressbar" aria-valuenow="43" aria-valuemax="100">
+        	<h5 class="raised">£43&nbsp;raised </h5>
+        </div>
+        	
+        	<h5 class="goal">Target: £100</h5>
+    </div>
+        </div>
+
+        <br><br>
+
+        <div class="donate">
+			<button>Donate</button>
+			<form name="donAmount" id="donAmount">
+			  <input type="radio" value="1" name="amount" id="one">
+			  <label for="one" class="one">£1</label>
+			  <input type="radio" value="5" name="amount" id="five">
+			  <label for="five" class="five">£5</label>
+			  <input type="radio" value="10" name="amount" id="ten">
+			  <label for="ten" class="ten">£10</label>
+			</form>
+		</div>
+
+		<div id='show-me' style='display:none'>
+			<button class="confirm" data-toggle="modal" data-target="#thankyouModal">Confirm</button>
+		</div>
+		<div class="alert alert-success" role="alert">
+		  We need <strong>£</strong><strong id="amountRemaning">57</strong> more to reach our target!
+		</div>
+		<div class="alert alert-danger" role="alert">
+		  <strong>Thank you for your contribution!</strong> We have successfully raised the requred funds!
+		</div>
+
+
+		 <!-- Modal -->
+		  <div class="modal fade" id="thankyouModal" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <h4 class="modal-title">Thank you!</h4>
+		        </div>
+		        <div class="modal-body">
+		          <p>Thank you for your kind contribution of £<span id="amountDonated"></span> towards the fund raising!</p>
+		         <label><input type="checkbox" name="dismiss" class="dismissModal">Don't show again!</label><br />
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default checkClose" data-dismiss="modal">Close</button>
+		        </div>
+		      </div>
+		      
+		    </div>
+		  </div>
+
+      </div>
+      
+
+<!-- JavaScript Files -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

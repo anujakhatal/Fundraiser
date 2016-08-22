@@ -1,0 +1,298 @@
+.container {
+    width: 50%!important;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 50px;
+    border: 2px solid #0C374D;
+}
+
+.row {
+    margin: 0px!important;
+}
+
+h1 {
+    margin-bottom: 50px!important;
+
+}
+
+body {
+  padding: 50px;
+  background-image: url("../images/bg.jpg");  
+      background-size: cover;
+}
+
+.progress-bg {
+    margin: 0 auto;
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+  text-align: center;
+    background: url("http://www.atsu.edu/stlclinic/images/progress-bar-bg.jpg") repeat;
+    -moz-box-shadow:    inset 0 0 10px #ccc;
+    -webkit-box-shadow: inset 0 0 10px #ccc;
+    box-shadow:         inset 0 0 10px #ccc;
+}
+
+.progress-bar {
+    height: 78px;
+    border-radius: 10px;
+    float: left;
+    width: 50%;
+    /* fallback */ 
+    background-color: #1c314a; 
+    
+    /* Safari 4-5, Chrome 1-9 */ 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1c314a), to(#27425f)); 
+    
+    /* Safari 5.1, Chrome 10+ */ 
+    background: -webkit-linear-gradient(top, #1c314a, #27425f); 
+    
+    /* Firefox 3.6+ */ 
+    background: -moz-linear-gradient(top, #1c314a, #27425f); 
+    
+    /* IE 10 */ 
+    background: -ms-linear-gradient(top, #1c314a, #27425f); 
+    
+    /* Opera 11.10+ */ 
+    background: -o-linear-gradient(top, #1c314a, #27425f);  
+}
+
+.progress-bg h5.goal, .progress-bg h5.raised {
+    font-family: Arial,sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: inline;
+}
+
+
+.progress-bg h5.raised {
+    color: #fff;
+    margin: 14px 25px 0 50px;
+    padding: 0 25px 0 0;
+}
+
+.progress-bg h5.goal {
+    color: #b2b2b2;
+  text-align: center;
+}
+
+body .progress-bg h5.raised {
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+       -moz-animation: fadein 4s; /* Firefox */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+.progress-bg h3.goal {
+    float: right;
+    display: inline;
+    padding: 0 25px 0 0;
+  text-align: center;
+}
+
+body .progress-bg div {
+    -webkit-animation: progress-bar 2s ease forwards;
+    -moz-animation: progress-bar 2s ease forwards;
+    -o-animation: progress-bar 2s ease forwards;
+    animation: progress-bar 2s ease forwards;
+}
+
+/*@-webkit-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 43%; }
+}
+
+@-moz-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 43%; }
+}
+
+@-o-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 43%; }
+}
+
+@keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 43%; }
+}
+*/
+.confirm {
+  margin-bottom: 25px;
+}
+.alert-danger {
+  display: none;
+}
+.donate {
+  margin: 30px 0;
+}
+button{
+  margin-top: 4em;
+  background-color: #ff3a3a;
+  border: 1px solid #ff7373 ;
+  color: white!important;
+  font-family: 'Lato';
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  padding: 0.5em 0em;
+  width: 12rem;
+  border-radius: 0.3rem;
+  outline: none;
+  .active &{
+    border-bottom: 1px solid #ccc;
+    border-radius: 0.3rem 0.3rem 0 0;
+  }
+}
+.donate form{
+  display: none;
+  width: 12rem;
+  -webkit-box-shadow: 0px 0px 10px 0px #2e5eae ;
+  -moz-box-shadow: 0px 0px 10px 0px #2e5eae;
+  box-shadow: 0px 0px 10px 0px #2e5eae;
+  padding-top: 50px;
+  border-radius: 0.3rem;
+  margin: 0 auto;
+  margin-top: -50px;
+  .active & {
+    //display: block;
+  }
+}
+.donate input{
+  -webkit-appearance: none;
+  display: none;
+   position: absolute;
+}
+.donate label{
+
+  display: block;
+  background-color: #f2f2f2;
+  color: #356bc6;
+  padding: 0.5em 0;
+  width: 12rem;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+  transition: all 0.05s ease;
+}
+  .donate label:hover, .donate label:focus{
+    background-color: #ffffff;
+    color: #2dbb55;
+    -ms-transform: scale(1.02,1.02); /* IE 9 */
+    -webkit-transform: scale(1.02,1.02); /* Safari */
+    transform: scale(1.02,1.02);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2) ;
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2) ;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  }
+  .donate label:last-child{
+    border-radius: 0 0 0.3rem 0.3rem;
+  }
+
+
+.highlight {
+
+    background-color: #ffffff!important;
+    color: #2dbb55!important;
+    -ms-transform: scale(1.02,1.02); /* IE 9 */
+    -webkit-transform: scale(1.02,1.02); /* Safari */
+    transform: scale(1.02,1.02);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2) ;
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2) ;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+.normal {
+     background-color: #f2f2f2;
+     color: #356bc6;
+}
+
+#show-me1 {
+  margin-top: 20px;
+  color: #ff3a3a;
+}
+
+/*----------MODAL CSS--------*/
+.modal-body > p {
+  transform: translateY(20%);
+}
+.modal-header {
+  background-color: #1c314a!important;
+  color: #fff;
+}
+.modal-footer > button {
+  background-color: #ff3a3a;
+  color: #fff;
+}
+.modal-footer > button:hover {
+  background-color: #ff3a3a;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 860px) {
+    .container {
+        width: 75%!important;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .container {
+        width: 100%!important;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .container {
+        padding: 15px!important;
+    }
+    body {
+      padding: 10px;
+    }
+    .progress-bg h5.goal, .progress-bg h5.raised {
+        font-size: 1.2em;
+        line-height: 28px;
+  }
+  .progress-bg {
+    height: 28px;
+  }
+  h1 {
+    font-size: 26px!important;
+  }
+}
+
