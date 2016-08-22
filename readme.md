@@ -14,5 +14,5 @@ Once selected, click 'Confirm' to make the donation.
 
 ### Run the application
 To run the application, do one of the following - 
-* Download Fundraiser Meter from [here]() to run on your local machine
-* Follow [this link] to run directly ()
+* Download Fundraiser Meter from [here](https://github.com/anujakhatal/Fundraiser) to run on your local machine
+* Follow [this link](https://anujakhatal.github.io/Fundraiser/) to run directly

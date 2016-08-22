@@ -12,6 +12,7 @@
 
 h1 {
     margin-bottom: 50px!important;
+      font-family: "Roboto"!important;
 
 }
 
@@ -19,8 +20,19 @@ body {
   padding: 50px;
   background-image: url("../images/bg.jpg");  
       background-size: cover;
+
+}
+.labelCheck
+{
+    margin-left: 5px;
+    font-weight: normal;
 }
 
+input[type="checkbox"]
+{
+    vertical-align:middle!important;
+        margin: -1px 0 0!important;
+}
 .progress-bg {
     margin: 0 auto;
     width: 100%;
